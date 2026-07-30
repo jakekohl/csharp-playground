@@ -1,0 +1,52 @@
+DISCLAIMERS
+
+This project ("C# Playground") is provided for educational, experimental, and
+personal learning purposes only. It is not a production-ready product and is
+not intended for commercial, mission-critical, or regulated use without your
+own independent review, testing, and hardening.
+
+NO WARRANTY
+The software is provided "AS IS" and "AS AVAILABLE", without warranty of any
+kind, express or implied. This includes, without limitation, warranties of
+merchantability, fitness for a particular purpose, title, non-infringement,
+accuracy, completeness, or uninterrupted or error-free operation.
+
+NO SUPPORT
+No support, maintenance, updates, bug fixes, security patches, training, or
+assistance of any kind is offered or guaranteed. Issues, questions, and pull
+requests may be ignored or declined at the author's sole discretion.
+
+USE AT YOUR OWN RISK
+You assume all risk arising from downloading, installing, configuring, running,
+modifying, or relying on this software. The author is not liable for any loss,
+damage, or claim — including but not limited to data loss, security breaches,
+service outages, incorrect results, costs of substitute goods or services, or
+incidental, consequential, special, or punitive damages — even if advised of
+the possibility of such damages.
+
+CREDENTIALS AND SECRETS
+You are solely responsible for any credentials, connection strings, API keys,
+or other secrets you place in configuration files (including .env) or
+environment variables. Do not commit secrets to source control. The author is
+not responsible for misuse, exposure, or compromise of credentials used with
+this project.
+
+THIRD-PARTY COMPONENTS
+This project may include or depend on third-party libraries, packages, and
+services (for example, ASP.NET Core, NuGet packages, client-side libraries, or
+cloud/database providers). Those components are governed by their own licenses
+and terms. The author makes no representations about their fitness, security,
+or continued availability.
+
+EXTERNAL SERVICES
+Any integration with external systems (such as Azure SQL or other databases,
+APIs, or cloud services) is optional and entirely your responsibility to
+configure, secure, and operate. Connectivity, data integrity, billing, and
+compliance related to those services are outside the scope of this project.
+
+NO PROFESSIONAL ADVICE
+Nothing in this repository constitutes legal, security, compliance, or
+professional advice. Code samples and comments are illustrative only.
+
+BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE DISCLAIMERS
+AND AGREE TO USE THE SOFTWARE SUBJECT TO THE LICENSE AND THESE TERMS.

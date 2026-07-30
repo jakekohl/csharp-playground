@@ -5,7 +5,7 @@ A basic ASP.NET Core Razor Pages web app for learning and experimenting.
 ## Getting Started
 ```bash
 # Clone Repo
-git clone https://github.com/jakekohl/csharp-playground
+git clone https://github.com/jakekohl/csharp-playground.git
 
 # Build Solution
 dotnet build
