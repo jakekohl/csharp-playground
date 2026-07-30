@@ -1,3 +1,6 @@
+// Load .env into process environment (sql_server, sql_user, etc.) before anything reads them
+DotNetEnv.Env.Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
@@ -24,5 +27,19 @@ app.MapGet("/api/hello", () => Results.Ok(new
     message = "Hello from the playground API",
     timestamp = DateTimeOffset.UtcNow
 }));
+
+app.MapGet("/api/health", () => Results.Ok(new
+{
+    status = "healthy",
+    timestamp = DateTimeOffset.UtcNow
+}));
+
+app.MapGet("/api/db/health", async (CancellationToken ct) =>
+{
+    var ok = await Playground.Util.DB.CanConnectAsync(ct);
+    return ok
+        ? Results.Ok(new { status = "healthy", database = "reachable", timestamp = DateTimeOffset.UtcNow })
+        : Results.Json(new { status = "unhealthy", database = "unreachable", timestamp = DateTimeOffset.UtcNow }, statusCode: 503);
+});
 
 app.Run();
