@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center py-4">
+    <h1 class="display-5">C# Playground</h1>
+    <p class="lead text-muted">
+        A sandbox ASP.NET Core web app for trying out ideas.
+    </p>
+</div>
+
+<div class="row g-3 mt-2">
+    <div class="col-md-4">
+        <h2 class="h5">Razor Pages</h2>
+        <p class="text-muted small">
+            Add pages under <code>Pages/</code>. Each <code>.cshtml</code> pairs with a
+            <code>.cshtml.cs</code> PageModel for server-side logic.
+        </p>
+        <a class="btn btn-outline-primary btn-sm" asp-page="/Sandbox">Open Sandbox</a>
+    </div>
+    <div class="col-md-4">
+        <h2 class="h5">Minimal APIs</h2>
+        <p class="text-muted small">
+            Endpoints live in <code>Program.cs</code>. Hit the sample API below to see JSON in action.
+        </p>
+        <a class="btn btn-outline-primary btn-sm" href="/api/hello">GET /api/hello</a>
+    </div>
+    <div class="col-md-4">
+        <h2 class="h5">Static assets</h2>
+        <p class="text-muted small">
+            CSS and JS go in <code>wwwroot/</code>. Layout and shared markup live under
+            <code>Pages/Shared/</code>.
+        </p>
+        <a class="btn btn-outline-secondary btn-sm" href="https://learn.microsoft.com/aspnet/core" target="_blank" rel="noopener">Docs</a>
+    </div>
+</div>
